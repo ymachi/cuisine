@@ -1,4 +1,7 @@
 
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
 /******************************************************************************/
 
 .container{
@@ -77,24 +80,31 @@ li{
 @media screen and (min-width: 768px) {
   /**** BOXS *****/
   .cards {
-       display: grid; /* Utilisation de la grille pour une meilleure disposition */
-       grid-template-columns: repeat(2, 1fr); /* Affichage de 2 cartes par ligne */
-       grid-gap: 2rem; /* Espacement entre les cartes */
-       justify-items: center; /* Centrer les éléments horizontalement */
+       display: grid; 
+       grid-template-columns: repeat(2, 1fr); 
+       grid-gap: 2rem;
+       justify-items: center; 
    }
 
-   .card {
-       width: 100%; /* Largeur de la carte pour s'adapter à la grille */
-       padding: 2rem; /* Réduction de l'espacement interne */
-   }
+   /* .card {
+       width: 100%; 
+       padding: 2rem; 
  
+} */
 }
 
 /************* DESKTOP *************/
 @media screen and (min-width: 992px){
    /**** BOXS *****/
-    .cards{
-     display: flex;
-     justify-content: center;
+   .cards {
+      display: grid; 
+      grid-template-columns: repeat(4, 1fr); 
+      grid-gap: 2rem;
+      justify-items: center; 
   }
+
+  /* .card {
+   width: 100%; 
+   padding: 2rem;
+}  */
 }
