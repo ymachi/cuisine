@@ -25,7 +25,7 @@ const renderRecipes = (data) => {
           <li>${meals.strCategory}</li>
           <li>${meals.strArea}</li>
         </ul>
-        <p>${meals.strInstructions}</p>
+        <p class="intro">${meals.strInstructions}</p>
       </article>`;
   cards.insertAdjacentHTML("beforeend", html);
 };
