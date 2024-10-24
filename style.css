@@ -1,0 +1,100 @@
+
+/******************************************************************************/
+
+.container{
+   margin: auto;
+}
+
+.img-responsive{
+  width: 100%;
+}
+/****************  TITRE *********************/
+h1{
+  padding-top: 2rem;
+  text-align: center;
+   color: #2F1E0E;
+}
+h2{
+  text-align: center;
+}
+/***********************************************************************/
+/*************************** PARAGRAPHE *******************************/
+.intro p{
+  text-align: justify;
+  padding: 1.6rem;
+  color: #2C030B;
+}
+/******************************** BOXS *******************************/
+
+.cards h3{
+  text-align: center;
+}
+
+.card{
+   background-color: #a58e88;
+   border: 2px solid #a58e88;
+   border-radius: 6px;
+   padding: 4rem;
+   margin: 2rem;
+}
+
+.button{
+   text-align: center;
+   background-color: white;
+   text-decoration: none;
+   color:  #a58e88;
+   border-radius: 6px;
+   padding: 1rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   
+}
+
+.button:hover{
+  background-color:  #a58e88;
+  color: white;
+  border: 2px solid #a58e88;
+}
+
+.card ul{
+  padding: 2rem;
+}
+li{
+   list-style: none;
+}
+
+/***********************************************************************/
+
+
+
+
+
+
+
+/*************************** MÉDIAS QUERIES******************************/
+
+/************* TABLETTE  *************/
+@media screen and (min-width: 768px) {
+  /**** BOXS *****/
+  .cards {
+       display: grid; /* Utilisation de la grille pour une meilleure disposition */
+       grid-template-columns: repeat(2, 1fr); /* Affichage de 2 cartes par ligne */
+       grid-gap: 2rem; /* Espacement entre les cartes */
+       justify-items: center; /* Centrer les éléments horizontalement */
+   }
+
+   .card {
+       width: 100%; /* Largeur de la carte pour s'adapter à la grille */
+       padding: 2rem; /* Réduction de l'espacement interne */
+   }
+ 
+}
+
+/************* DESKTOP *************/
+@media screen and (min-width: 992px){
+   /**** BOXS *****/
+    .cards{
+     display: flex;
+     justify-content: center;
+  }
+}
